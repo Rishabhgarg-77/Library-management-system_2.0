@@ -1,0 +1,24 @@
+<!-- Search Books Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Books</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        <header>
+        <h1>Search Books</h1>
+        <nav><a href="dashboard.php">Dashboard</a></nav>
+    </header>
+    <main>
+        <form action="php/search_books.php" method="GET">
+            <input type="text" name="query" placeholder="Search by title or author" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="results"><!-- Results will load here --></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
